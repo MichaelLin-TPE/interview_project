@@ -3,8 +3,6 @@ package com.interview.interviewproject.list
 import android.content.Context
 import android.graphics.Bitmap
 import android.widget.ImageView
-import com.interview.interviewproject.DependencyInjection
-import com.interview.interviewproject.InterviewApplication
 import com.interview.interviewproject.R
 import com.nostra13.universalimageloader.core.DisplayImageOptions
 import com.nostra13.universalimageloader.core.ImageLoader

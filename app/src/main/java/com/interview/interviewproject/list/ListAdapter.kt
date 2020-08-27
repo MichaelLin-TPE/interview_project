@@ -32,35 +32,21 @@ class ListAdapter(private val dataArray : ArrayList<ListData>,private val contex
     }
     inner class ViewHolder(private val dataBinding: ListItemBinding) : RecyclerView.ViewHolder(dataBinding.root){
 
-//        private lateinit var downloadPicture: DownloadPicture
 
         fun setData(
             listData: ListData,
             onListItemClickListener: OnListItemClickListener
         ) {
+
+
+
             ImageLoaderManager.getInstance().setPhotoUrl(listData.thumbnailUrl,dataBinding.listItemImage)
 
             dataBinding.listItemId.text = listData.id.toString()
             dataBinding.listItemTitle.text = listData.title
 
 
-//            downloadPicture = DownloadPicture()
-//            downloadPicture.execute(listData.thumbnailUrl)
-//            downloadPicture.setOnImageDownloadListener(object :DownloadPicture.OnImageDownloadListener{
-//                override fun onSuccess(bitmap: Bitmap) {
-//
-//                    if (dataBinding.listItemImage.tag == 0){
-//                        dataBinding.listItemImage.tag = listData.id
-//                        dataBinding.listItemImage.setImageBitmap(bitmap)
-//                    }else if (dataBinding.listItemImage.tag != listData.id){
-//                        dataBinding.listItemImage.setImageBitmap(bitmap)
-//                    }
-//                }
-//
-//                override fun onFail(errorCode: String) {
-//                    dataBinding.listItemId.text = errorCode
-//                }
-//            })
+
 
             dataBinding.listItemClickArea.setOnClickListener {
                 onListItemClickListener.onClick(listData)
