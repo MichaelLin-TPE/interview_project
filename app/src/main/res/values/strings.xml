@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InterviewProject</string>
+    <string name="next_page">request Api</string>
+    <string name="error_title">錯誤訊息</string>
+    <string name="back">Back</string>
+    <string name="json_title">Json PlaceHolder</string>
+    <string name="confirm">確定</string>
+</resources>
